@@ -19,118 +19,115 @@ The deliverable facts are collected and update in all deliverable lifecycle phas
 ## Properties
 
 - programmingLanguage
-  - type: tbd
+  - type: programmingLanguageType
   - minCount: 1
   - maxCount: n
 
 - dependencyManager
-  - type: tbd
+  - type: dependencyManagerType
   - minCount: 1
   - maxCount: n
 
 - packageManager
-  - type: tbd
+  - type: packageManagerType
   - minCount: 1
   - maxCount: n
 
 - environmentFramework
-  - type: tbd
+  - type: environmentFrameworkType
   - minCount: 1
   - maxCount: n
 
 - applicationCategory
-  - type: tbd
+  - type: applicationCategoryType
   - minCount: 1
   - maxCount: 1
 
 - applicationType
-  - type: tbd
+  - type: applicationTypeType
   - minCount: 1
   - maxCount: 1
 
 - distributionMethod
-  - type: tbd
+  - type: distributionMethodType
   - minCount: 1
-  - maxCount: 1
+  - maxCount: n
 
 - operatingSystem
-  - type: tbd
+  - type: operatingSystemType
   - minCount: 1
   - maxCount: 1
 
 - consistsOf
-  - type: tbd
+  - type: Artifact
   - minCount: 1
   - maxCount: n
 
 - developedBy
-  - type: tbd
+  - type: Agent
   - minCount: 1
   - maxCount: n
 
 - contact
-  - type: tbd
+  - type: Agent
   - minCount: 1
   - maxCount: n
 
 - linkToArchitecture
-  - type: tbd
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
 
 - osmConcept
-  - type: tbd
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
 
 - fossComplianceBundleStorage
-  - type: tbd
+  - type: fossComplianceBundleStorageType
   - minCount: 1
   - maxCount: 1
 
 - reviews
-  - type: tbd
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: n
 
 - comment
-  - type: tbd
-  - minCount: 1
-  - maxCount: n
+  - type: xsd:string
+  - maxCount: 1
 
 [//]: the parts below should be a class that can be instantiated 0:n
 
 - supplierDeliverableFacts
-  - type: tbd
+  - type: Artifact
   - minCount: 1
   - maxCount: n
 
 - supplierName
-  - type: tbd
+  - type: Agent
   - minCount: 1
   - maxCount: n
 
 - deliverableFromSupplier
-  - type: tbd
+  - type: Artifact
   - minCount: 1
   - maxCount: n
 
 - fossTermsTowardsSupplier
-  - type: tbd
-  - minCount: 1
-  - maxCount: n
+  - type: Artifact
+  - maxCount: 1
 
 - distributionTermsFromSupplier
-  - type: tbd
-  - minCount: 1
-  - maxCount: n
+  - type: Artifact
+  - maxCount: 1
 
 - fossComplianceBundleConsumption
-  - type: tbd
+  - type: fossComplianceBundleProvisionType
   - minCount: 1
   - maxCount: n
 
 - supplierFossContact
-  - type: tbd
+  - type: Agent
   - minCount: 1
   - maxCount: n
