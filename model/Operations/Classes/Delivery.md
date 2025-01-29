@@ -18,4 +18,31 @@ tbd
 
 ## Properties
 
-tbd
+- supplierName
+  - type: Agent
+  - minCount: 1
+  - maxCount: n
+
+- deliverableFromSupplier
+  - type: Artifact
+  - minCount: 1
+  - maxCount: n
+
+- fossTermsTowardsSupplier
+  - type: Artifact
+  - maxCount: 1
+
+- distributionTermsFromSupplier
+  - type: Artifact
+  - maxCount: 1
+
+- fossComplianceBundleConsumption
+  - type: fossComplianceBundleProvisionType
+  - minCount: 1
+  - maxCount: n
+
+- supplierFossContact
+  - type: Agent
+  - minCount: 1
+  - maxCount: n
+
