@@ -20,81 +20,76 @@ The Application Facts are collected all along the product lifecyle and contents 
 ## Properties
 
 - productOwner
-  - type: tbd
+  - type: xsd:string
   - minCount: 1
   - maxCount: 1
 
 - documentationLink
-  - type: tbd
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
 
 - productAccessURL
-  - type: tbd
-  - minCount: 1
+  - type: xsd:anyURI
   - maxCount: 1
 
 - commentComment
-  - type: tbd
-  - minCount: 1
+  - type: xsd:string
   - maxCount: 1
 
 - distributedDeliverables
-  - type: tbd
+  - type: Artifact
   - minCount: 1
   - maxCount: n
 
 - technicalDeploymnent
-  - type: tbd
+  - type: deploymentType
   - minCount: 1
   - maxCount: 1
 
 - contact
-  - type: tbd
+  - type: Agent
   - minCount: 1
   - maxCount: 1
 
 - scope
-  - type: tbd
+  - type: scopeType
   - minCount: 1
   - maxCount: 1
 
 - relationType
-  - type: tbd
+  - type: relationTypeType
   - minCount: 1
   - maxCount: 1
 
 - supplyChainContext
-  - type: tbd
+  - type: supplyChainContextType
   - minCount: 1
   - maxCount: 1
 
 - releaseCycles
-  - type: tbd
+  - type: releaseCyclesType
   - minCount: 1
   - maxCount: 1
 
-- fossComplianceBundelProvision
-  - type: tbd
+- fossComplianceBundleProvision
+  - type: fossComplianceBundleProvisionType
   - minCount: 1
   - maxCount: 1
 
 - contractSetup
-  - type: tbd
+  - type: contractSetupType
   - minCount: 1
   - maxCount: 1
 
 - fossTermsTowardsCustomer
-  - type: tbd
-  - minCount: 1
+  - type: Artifact
   - maxCount: 1
 
 - distributionTermsTowardsCustomer
-  - type: tbd
-  - minCount: 1
+  - type: Artifact
   - maxCount: 1
 
 - customerFossContact
-  - type: tbd
-  - minCount: 1
+  - type: Agent
   - maxCount: 1
