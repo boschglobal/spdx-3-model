@@ -97,37 +97,7 @@ The deliverable facts are collected and update in all deliverable lifecycle phas
   - type: xsd:string
   - maxCount: 1
 
-[//]: the parts below should be a class that can be instantiated 0:n
-
 - supplierDeliverableFacts
-  - type: Artifact
-  - minCount: 1
-  - maxCount: n
-
-- supplierName
-  - type: Agent
-  - minCount: 1
-  - maxCount: n
-
-- deliverableFromSupplier
-  - type: Artifact
-  - minCount: 1
-  - maxCount: n
-
-- fossTermsTowardsSupplier
-  - type: Artifact
-  - maxCount: 1
-
-- distributionTermsFromSupplier
-  - type: Artifact
-  - maxCount: 1
-
-- fossComplianceBundleConsumption
-  - type: fossComplianceBundleProvisionType
-  - minCount: 1
-  - maxCount: n
-
-- supplierFossContact
-  - type: Agent
-  - minCount: 1
+  - type: Delivery
+  - minCount: 0
   - maxCount: n
