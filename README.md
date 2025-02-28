@@ -15,11 +15,42 @@ All use cases supported by the prior version are supported here as well.
 This repository holds the model for the information captured in SPDX version 3
 standard.
 
-## Branches and Formats
+Translations of the information model may be available.
+English remains the normative language in all cases.
 
-The editable files inside `model/` directory are written in a constrained
-subset of Markdown, with specific headings for specific types of information,
+## Branch Structure
+
+The SPDX 3 model repo follows the
+[Gitflow](https://gist.github.com/HeratPatel/271b5d2304de2e2cd1823b9b62bf43e0)
+workflow with the addition of support branches.
+
+The branches in use are:
+
+- `main` - This will always be the latest released specification.
+- `develop` - This branch will be where the active development for the next
+  major or minor version takes place.
+  Once released, the `develop` branch will be merged into the `main` branch.
+- `support/x.y` - These branches will be long-lived and contain any updates to
+  a minor version of the specification.
+  Additions such as translations can be added to the support branch.
+  `x.y` represents the MAJOR.MINOR version, following Semantic Versioning
+  (SemVer) conventions.
+  Once any changes are accepted and released, the support branch will be tagged
+  and merged into both `develop` and `main` branches.
+- General feature or fix branches - there may be feature branches made for
+  specific enhancements or fixes to the spec.
+  These will be short-lived and merged into either a `support` branch or the
+  `develop` branch.
+
+## Formats
+
+The editable files inside `model/` directory are written in a
+[constrained subset of Markdown][format],
+with specific headings for specific types of information,
 and are stored in the `main` branch.
+
+Textual description of these model files
+[can be translated][translation] into other natural languages.
 
 The editable files are automatically processed by
 [spec-parser](https://github.com/spdx/spec-parser/)
@@ -34,7 +65,7 @@ and the following are generated:
   - [Turtle format](https://en.wikipedia.org/wiki/Turtle_(syntax)):
     [spdx-model.ttl](https://spdx.org/rdf/3.0.1/spdx-model.ttl)
   - [JSON-LD format](https://json-ld.org/):
-    [spdx-model.jsonld](https://spdx.github.io/spdx-spec/v3.0.1/rdf/spdx-model.jsonld) 
+    [spdx-model.jsonld](https://spdx.github.io/spdx-spec/v3.0.1/rdf/spdx-model.jsonld)
 
 People who wish to read the current version of the information
 should be viewing the generated files, while anyone wanting to edit
@@ -47,7 +78,8 @@ For the specification content other than the model, they are in the
 
 The SPDX model is described using profiles related to the software application.
 The profiles are organized as sub-directories under the ‘model’ directory.
-The model diagram is available in [model.drawio](./model.drawio) file.
+
+The model diagram is available in [model.drawio][model-diagram] file.
 
 Note:
 
@@ -120,7 +152,11 @@ snippets, and artifacts of the software application.
 
 See [CHANGELOG.md](CHANGELOG.md) for changes between versions.
 
-## Contribute!
+## Glossary
+
+See [glossary][glossary] for definitions and explanations of terms used throughout the specification.
+
+## Contribute
 
 For information about how to contribute to a specific profile,
 please see [Contributing.md](Contributing.md).
@@ -133,5 +169,9 @@ and during our [regular meetings][meetings].
 
 All the details are in: <https://spdx.dev/participate/tech/>
 
+[format]: ./docs/format.md
+[translation]: ./docs/translation.md
+[model-diagram]: ./docs/model.drawio
+[glossary]: ./docs/glossary.md
 [meetings]: https://github.com/spdx/meetings/
 [spdx-tech-list]: https://lists.spdx.org/mailman/listinfo/spdx-tech
