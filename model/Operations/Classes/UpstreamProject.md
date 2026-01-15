@@ -10,7 +10,7 @@ Project in the Open Source Community that shares their workproducts for reuse un
 
 An Open Source Project is a collaborative endeavor to create workproducts where the source code is made publicly accessibe. 
 The project is governed by an open source license that allows anyone to inspect, modify, enhance, and share the code.
-The Upstream Project is an Open Source Project as source for downstream derivatives in the contect of a supply chain.
+The Upstream Project is an Open Source Project as source for downstream derivatives in the context of a supply chain.
 (The definition of an 'Open Source Project' is derived from the principles in the Open Source Definition (https://opensource.org/osd). The definition of 'Upstream Project' is based on the community-accepted meaning described in sources like Wikipedia (https://en.wikipedia.org/wiki/Upstream_(software_development)).)
 
 ## Metadata
